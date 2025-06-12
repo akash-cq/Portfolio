@@ -17,12 +17,16 @@ export default function navbar() {
   ];
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.screenY < 10);
-      console.log(isScrolled);
+      // Set true if scrollY > 10, else false
+      setScrolled(window.scrollY > 10);
     };
     window.addEventListener("scroll", handleScroll);
+    // Run on mount to set initial state if page is reloaded in middle
+    handleScroll();
+
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [setScrolled]);
+  }, []);
+  
   const stateChange = useCallback(
     (sectionId) => {
       setactiveState(sectionId);
@@ -32,8 +36,8 @@ export default function navbar() {
   );
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px[7vw] lg:px-[20vw] ${
-        isScrolled ? "bg-black/30 backdrop-blur-md" : "bg-transperent"
+      className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
+        isScrolled ? "bg-black/30 backdrop-blur-md" : "bg-transparent"
       }`}
     >
       {/** logo */}
@@ -117,7 +121,7 @@ export default function navbar() {
                     activeState === item.id ? "text-[#8245ec]" : ""
                   }`}
                 >
-                    <a href={`#${item.id}`} onClick={() => stateChange(item.id)}>
+                  <a href={`#${item.id}`} onClick={() => stateChange(item.id)}>
                     {item.label}
                   </a>
                 </li>

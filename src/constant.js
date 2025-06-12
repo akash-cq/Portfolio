@@ -75,7 +75,7 @@ export const experiences = [
     id: 0,
     img: CqLogo,
     role: "Software Engineer Intern",
-    company: "CodeQuotient",
+    name: "CodeQuotient",
     date: "Junary 2025 - Present",
     desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
     skills: [
@@ -98,7 +98,7 @@ export const experiences = [
     id: 1,
     img: CqLogo,
     role: "Summer Internship",
-    company: "CodeQuotient",
+    name: "CodeQuotient",
     date: "July 2024 - September 2024",
     desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
     skills: ["HTML", "CSS", "JavaScript", "Problem Solving"],
@@ -109,7 +109,7 @@ export const education = [
   {
     id: 0,
     img: kukLogo,
-    school: "Kurukshetra University",
+    name: "Kurukshetra University",
     date: "Sept 2023 - July 2026",
     grade: "7.81 CGPA(Current)",
     desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
@@ -118,7 +118,7 @@ export const education = [
   {
     id: 2,
     img: SdssLogo,
-    school: "Sanatan Dharma Senior Secondery School,jagadhri",
+    name: "Sanatan Dharma Senior Secondery School,jagadhri",
     date: "Apr 2022 - March 2023",
     grade: "78%",
     desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
@@ -127,7 +127,7 @@ export const education = [
   {
     id: 2,
     img: SdssLogo,
-    school: "Sanatan Dharma Senior Secondery School,jagadhri",
+    name: "Sanatan Dharma Senior Secondery School,jagadhri",
     date: "Apr 2020 - March 2021",
     grade: "93%",
     desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
@@ -135,104 +135,93 @@ export const education = [
   },
 ];
 
-// export const projects = [
-//   {
-//     id: 0,
-//     title: "GitHub Profile Detective",
-//     description:
-//       "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
-//     image: githubdetLogo,
-//     tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
-//     github:
-//       "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
-//     webapp: "https://githubprofiledetective.netlify.app/",
-//   },
-//   {
-//     id: 1,
-//     title: "CS Prep",
-//     description:
-//       "A full-stack quiz-based platform designed for GATE/UGC NET students to practice previous year questions and create customized tests. The platform offers comprehensive profile stats and detailed results, helping students track and improve their preparation journey effectively.",
-//     image: csprepLogo,
-//     tags: [
-//       "React JS",
-//       "Node.js",
-//       "MongoDB",
-//       "Express",
-//       "HTML",
-//       "CSS",
-//       "JavaScript",
-//     ],
-//     github: "https://github.com/codingmastr/CSPrep",
-//     webapp: "https://csprep.netlify.app/",
-//   },
-//   {
-//     id: 2,
-//     title: "Movie Recommendation App",
-//     description:
-//       "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it a go-to app for movie enthusiasts.",
-//     image: movierecLogo,
-//     tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
-//     github: "https://github.com/codingmastr/Movie-Recommendation-App",
-//     webapp: "https://movie-recommendation-app-jet.vercel.app/",
-//   },
-//   {
-//     id: 3,
-//     title: "Email Validator NPM Package",
-//     description:
-//       "An efficient and customizable NPM package for validating email addresses. Built using React.js and Node.js, it provides robust validation features to help developers ensure that email inputs meet required formats and standards.",
-//     image: npmLogo,
-//     tags: ["React JS", "Node.js", "NPM", "Validation"],
-//     github: "https://github.com/codingmastr/cmtk-email-validator",
-//     webapp: "https://www.npmjs.com/package/cmtk-email-validator",
-//   },
-//   {
-//     id: 4,
-//     title: "Task Reminder Chrome Extension Tool",
-//     description:
-//       "A productivity-boosting Chrome extension designed to help users manage and remember their daily tasks. Built using JavaScript, it offers a simple interface with reminders and task notifications to keep users on track.",
-//     image: taskremLogo,
-//     tags: ["JavaScript", "Chrome Extension", "HTML", "CSS"],
-//     github: "https://github.com/codingmastr/Task-Reminder-Tool",
-//     webapp: "chrome://extensions/?id=kngheeibjnnidhfoomkpnbeghackheci",
-//   },
-//   {
-//     id: 5,
-//     title: "Webverse Digital",
-//     description:
-//       "The official website for Webverse Digital, a creative digital marketing agency. Built using HTML, CSS, and JavaScript, it features visually appealing animations and a clean design to showcase the agency's services.",
-//     image: webverLogo,
-//     tags: ["HTML", "CSS", "JavaScript", "Framer Motion"],
-//     github: "https://github.com/codingmastr/Webverse-Digital",
-//     webapp: "https://webversedigital.com/",
-//   },
-//   {
-//     id: 6,
-//     title: "Coding Master",
-//     description:
-//       "An ed-tech platform where users can access tech and coding-related blogs, notes, interview questions, e-books, and premium content with payment integration. Built with full-stack technologies for a seamless learning experience.",
-//     image: cmLogo,
-//     tags: ["React JS", "Node.js", "MongoDB", "Express", "Payment Integration"],
-//     github: "https://codingmasterweb.in/",
-//     webapp: "https://codingmasterweb.in/",
-//   },
-//   {
-//     id: 7,
-//     title: "Image Search App",
-//     description:
-//       "A React.js-based image search application that allows users to search and download high-quality images from the web. Built using external APIs to ensure a vast library of results for various queries.",
-//     image: imagesearchLogo,
-//     tags: ["React JS", "API", "Search Feature", "CSS", "Javascript"],
-//     github: "https://github.com/codingmastr/Image-Search-App",
-//     webapp: "https://imagsearch.netlify.app/",
-//   },
-//   {
-//     id: 8,
-//     title: "Image Background Remover",
-//     description:
-//       "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
-//     image: removebgLogo,
-//     tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
-//     github: "https://github.com/codingmastr/Image-Background-Remover",
-//     webapp: "https://removeyourbg.netlify.app/",
-//   },
-// ];
+export const projects = [
+  {
+    id: 7,
+    title: "Court Signature Management System",
+    description:
+      "A digital signature workflow application designed for court or government use with clearly defined roles: Admin, Officer, and Reader. Officers can view and digitally sign case files, Readers review and forward documents, while Admins manage users and oversee the workflow. The system employs role-based access control (RBAC), JWT authentication, and secure data handling to ensure document integrity, auditability, and streamlined approval processes.",
+    image: "", // Replace with your actual imported image or placeholder
+    tags: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "RBAC",
+      "JWT Authentication",
+    ],
+    github: "https://github.com/codingmastr/digital-signature-app", // Replace with your actual repo link
+    webapp: "https://your-signature-app.netlify.app/", // Replace with your deployed app URL if available
+  },
+  {
+    id: 8,
+    title: "WhatsApp Clone",
+    description:
+      "A real-time chat application replicating core WhatsApp features including one-on-one messaging, group chats, message notifications, and user presence indicators. Built using React and TypeScript on the frontend with a sleek UI library, and Node.js, Express, and MongoDB on the backend for managing users, messages, and chat rooms. Real-time communication is enabled via WebSocket (Socket.IO) for instant message delivery and updates.",
+    image:"", // Replace with actual image import or placeholder
+    tags: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Socket.IO",
+      "Real-time Chat",
+      "WebSocket",
+    ],
+    github: "https://github.com/codingmastr/whatsapp-clone", // Replace with your actual repo link
+    webapp: "https://your-whatsapp-clone.netlify.app/", // Replace with your deployed app URL
+  },
+  {
+    id: 1,
+    title: "To-Do Application with Authentication",
+    description:
+      "A secure and feature-rich to-do web application built using Node.js, Express, and MongoDB. It enables users to register, log in, add, edit, and delete tasks. The application supports session-based authentication, user-specific task display, and includes additional features like account deletion and validation for email and password. Designed during an internship at CodeQuotient.",
+    image: "", // Replace with actual imported image reference
+    tags: ["Node.js", "Express", "MongoDB", "JavaScript", "HTML", "CSS"],
+    github: "https://github.com/codingmastr/todo-app-authentication", // Replace with your actual repo link
+    webapp: "https://your-todo-app-url.netlify.app/", // Replace with your actual deployed link
+  },
+  {
+    id: 2,
+    title: "Short URL Generator",
+    description:
+      "A compact and efficient URL shortening service that allows users to convert long URLs into short links. Built using Node.js, Express, and MongoDB with authentication features. Each user can manage their shortened links, view analytics, and delete or log out of their account. Developed during an internship project to practice backend integration and user management.",
+    image: "", // Replace with actual imported image reference
+    tags: ["Node.js", "Express", "MongoDB", "JavaScript", "HTML", "CSS"],
+    github: "https://github.com/codingmastr/short-url-generator", // Replace with your actual repo link
+    webapp: "https://your-short-url-app.netlify.app/", // Replace with your actual deployed link
+  },
+  {
+    id: 3,
+    title: "Discussion Portal",
+    description:
+      "An interactive forum-like application where users can post questions and receive answers. Each answer can be liked or disliked, and questions can be marked as resolved. Features include real-time updates, hearting top questions, search functionality, and localStorage for data persistence. Built using HTML, CSS, and JavaScript during the CodeQuotient internship.",
+    image: "", // Replace with actual imported image reference
+    tags: ["HTML", "CSS", "JavaScript", "LocalStorage"],
+    github: "https://github.com/codingmastr/discussion-portal", // Replace with your actual repo link
+    webapp: "https://your-discussion-portal.netlify.app/", // Replace with your actual deployed link
+  },
+  {
+    id: 5,
+    title: "Snake and Fruit Game",
+    description:
+      "A console-based Snake game built using C++ with Object-Oriented Programming principles. The game features a movable snake that grows upon eating fruit and ends when the snake collides with itself or the wall. It utilizes classes to structure the game logic, including snake movement, collision detection, and dynamic fruit placement. A great example of using encapsulation, abstraction, and class interactions in C++.",
+    image: "", // Replace with the actual imported image reference or placeholder
+    tags: ["C++", "OOP", "Game Development", "Console Application"],
+    github: "https://github.com/codingmastr/snake-game-cpp", // Replace with your actual repo link
+    webapp: "", // Not applicable for C++ console apps unless hosted on a web emulator
+  },
+
+  {
+    id: 6,
+    title: "To-Do Application with React",
+    description:
+      "A sleek and responsive to-do list application built with React.js that helps users manage their daily tasks efficiently. Users can add, delete, and mark tasks as completed. The app features dynamic UI updates using React state and props, and showcases the use of reusable components, hooks, and conditional rendering. Built with clean design and responsive layout for all devices.",
+    image: "", // Replace with the actual image import or use a placeholder
+    tags: ["HTML", "CSS", "JavaScript", "React JS"],
+    github: "https://github.com/codingmastr/react-todo-app", // Replace with your actual repo link
+    webapp: "https://your-react-todo-app.netlify.app/", // Replace with your actual deployed link
+  },
+];
