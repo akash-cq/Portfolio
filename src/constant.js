@@ -17,8 +17,11 @@ import gitLogo from "./assets/git.png";
 import vercelLogo from "./assets/vercel.png";
 import vscodeLogo from "./assets/vscode.png";
 import postmanLogo from "./assets/postman.png";
-
-
+import gdImg from "./assets/gd.png";
+import whatsappclone from './assets/whatsappclone.png';
+import shortUrl from './assets/shorturl.png';
+import snakeandfruit from './assets/snakefruitd.png';
+import signature from './assets/signatureImg.jpg';
 import CqLogo from "./assets/cqLogo.jpeg";
 
 import SdssLogo from "./assets/sdssslogo.jpeg";
@@ -141,7 +144,7 @@ export const projects = [
     title: "Court Signature Management System",
     description:
       "A digital signature workflow application designed for court or government use with clearly defined roles: Admin, Officer, and Reader. Officers can view and digitally sign case files, Readers review and forward documents, while Admins manage users and oversee the workflow. The system employs role-based access control (RBAC), JWT authentication, and secure data handling to ensure document integrity, auditability, and streamlined approval processes.",
-    image: "", // Replace with your actual imported image or placeholder
+    image: signature, // Replace with your actual imported image or placeholder
     tags: [
       "React",
       "TypeScript",
@@ -159,7 +162,7 @@ export const projects = [
     title: "WhatsApp Clone",
     description:
       "A real-time chat application replicating core WhatsApp features including one-on-one messaging, group chats, message notifications, and user presence indicators. Built using React and TypeScript on the frontend with a sleek UI library, and Node.js, Express, and MongoDB on the backend for managing users, messages, and chat rooms. Real-time communication is enabled via WebSocket (Socket.IO) for instant message delivery and updates.",
-    image:"", // Replace with actual image import or placeholder
+    image:whatsappclone, // Replace with actual image import or placeholder
     tags: [
       "React",
       "TypeScript",
@@ -174,21 +177,11 @@ export const projects = [
     webapp: "https://your-whatsapp-clone.netlify.app/", // Replace with your deployed app URL
   },
   {
-    id: 1,
-    title: "To-Do Application with Authentication",
-    description:
-      "A secure and feature-rich to-do web application built using Node.js, Express, and MongoDB. It enables users to register, log in, add, edit, and delete tasks. The application supports session-based authentication, user-specific task display, and includes additional features like account deletion and validation for email and password. Designed during an internship at CodeQuotient.",
-    image: "", // Replace with actual imported image reference
-    tags: ["Node.js", "Express", "MongoDB", "JavaScript", "HTML", "CSS"],
-    github: "https://github.com/codingmastr/todo-app-authentication", // Replace with your actual repo link
-    webapp: "https://your-todo-app-url.netlify.app/", // Replace with your actual deployed link
-  },
-  {
     id: 2,
     title: "Short URL Generator",
     description:
       "A compact and efficient URL shortening service that allows users to convert long URLs into short links. Built using Node.js, Express, and MongoDB with authentication features. Each user can manage their shortened links, view analytics, and delete or log out of their account. Developed during an internship project to practice backend integration and user management.",
-    image: "", // Replace with actual imported image reference
+    image: shortUrl, // Replace with actual imported image reference
     tags: ["Node.js", "Express", "MongoDB", "JavaScript", "HTML", "CSS"],
     github: "https://github.com/codingmastr/short-url-generator", // Replace with your actual repo link
     webapp: "https://your-short-url-app.netlify.app/", // Replace with your actual deployed link
@@ -198,7 +191,7 @@ export const projects = [
     title: "Discussion Portal",
     description:
       "An interactive forum-like application where users can post questions and receive answers. Each answer can be liked or disliked, and questions can be marked as resolved. Features include real-time updates, hearting top questions, search functionality, and localStorage for data persistence. Built using HTML, CSS, and JavaScript during the CodeQuotient internship.",
-    image: "", // Replace with actual imported image reference
+    image: gdImg, // Replace with actual imported image reference
     tags: ["HTML", "CSS", "JavaScript", "LocalStorage"],
     github: "https://github.com/codingmastr/discussion-portal", // Replace with your actual repo link
     webapp: "https://your-discussion-portal.netlify.app/", // Replace with your actual deployed link
@@ -208,7 +201,7 @@ export const projects = [
     title: "Snake and Fruit Game",
     description:
       "A console-based Snake game built using C++ with Object-Oriented Programming principles. The game features a movable snake that grows upon eating fruit and ends when the snake collides with itself or the wall. It utilizes classes to structure the game logic, including snake movement, collision detection, and dynamic fruit placement. A great example of using encapsulation, abstraction, and class interactions in C++.",
-    image: "", // Replace with the actual imported image reference or placeholder
+    image: snakeandfruit, // Replace with the actual imported image reference or placeholder
     tags: ["C++", "OOP", "Game Development", "Console Application"],
     github: "https://github.com/codingmastr/snake-game-cpp", // Replace with your actual repo link
     webapp: "", // Not applicable for C++ console apps unless hosted on a web emulator
@@ -219,7 +212,7 @@ export const projects = [
     title: "To-Do Application with React",
     description:
       "A sleek and responsive to-do list application built with React.js that helps users manage their daily tasks efficiently. Users can add, delete, and mark tasks as completed. The app features dynamic UI updates using React state and props, and showcases the use of reusable components, hooks, and conditional rendering. Built with clean design and responsive layout for all devices.",
-    image: "", // Replace with the actual image import or use a placeholder
+    image: shortUrl, // Replace with the actual image import or use a placeholder
     tags: ["HTML", "CSS", "JavaScript", "React JS"],
     github: "https://github.com/codingmastr/react-todo-app", // Replace with your actual repo link
     webapp: "https://your-react-todo-app.netlify.app/", // Replace with your actual deployed link
