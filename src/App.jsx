@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Components/sub-folder/Navbar/navbar";
+import Navbar from "./Components/sub-folder/Navbar/Navbar.jsx";
 import About from "./Components/sub-folder/About/About";
 import Footer from "./Components/sub-folder/Footer/Footer";
 import Skill from "./Components/sub-folder/Skills/Skill";

@@ -3,7 +3,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
-export default function navbar() {
+export default function Navbar() {
   const [activeState, setactiveState] = useState("");
   const [isOpen, setOpen] = useState(false);
   const [isScrolled, setScrolled] = useState(false);
