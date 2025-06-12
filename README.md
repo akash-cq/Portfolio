@@ -5,6 +5,7 @@ This is my personal portfolio website built using **React** and **Vite**. It sho
 ---
 
 ## 🚀 Tech Stack
+<<<<<<< HEAD
 
 - **Frontend:** React, JavaScript
 - **Build Tool:** Vite
@@ -13,4 +14,10 @@ This is my personal portfolio website built using **React** and **Vite**. It sho
 ---
 
 ## 📂 Project Structure
+
+- **Frontend:** React, JavaScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS / CSS Modules / Plain CSS (update based on what you used)
+
+>>>>>>> 549d57ad018b9defc6d0fc61b86897fba3388ad2
 
